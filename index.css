@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "DM Sans";
 }
 
-body {
-    background-color: peachpuff;
+html {
+    scroll-behavior: smooth;
 }
 
 a {
@@ -86,8 +88,6 @@ header {
     width: 100%;
 
     display: flex;
-
-    background-color:lavenderblush;
 }
 
 .inicioIzq {
@@ -185,4 +185,257 @@ header {
     height: auto;
 
     margin: 1.5vh auto;
+}
+
+.contactanos {
+    height: 70vh;
+    width: 100%;
+}
+
+.contactanosContenido {
+    height: 60%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactanosTexto h1 {
+    text-align: center;
+    font-size: 4.5em;
+}
+
+.contactanosTexto p {
+    text-align: center;
+    font-size: 1.2em;
+
+    margin-top: 1vh;
+}
+
+.contactanosBotones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactanosBotones button{
+    transition: 0.25s;
+    
+    padding: 4vh;
+    font-size: 1.5em;
+
+    border-radius: calc(4vh + 1.5em);
+}
+
+.contactanosBotones button:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.integrantes {
+    height: auto;
+    width: 100%;
+
+    background-color: lightyellow;
+}
+
+.integrantesContenido {
+    height: 20vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.integrantesTexto h1 {
+    font-size: 3em;
+}
+
+.integrantesBox {
+    height: 100%;
+    width: 100%;
+
+    display: inline-block;
+}
+
+.iBoxFila {
+    height: 20vh;
+    width: 100%;
+
+    margin-bottom: 5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.integrantesItem {
+    height: 20vh;
+    width: 40%;
+
+    margin: 5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iItemIzq {
+    height: 20vh;
+    width: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iItemIzq img {
+    height: 15vh;
+    width: 15vh;
+
+    margin: 5vh;
+
+    border-radius: 10%;
+}
+
+.iItemDer {
+    height: 20vh;
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iItemTexto p {
+    margin: 2vh auto 0;
+}
+
+.footer {
+    height: auto;
+    width: 100%;
+
+    background-color: lightblue;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer p, .footer a {
+    color: rgb(73, 116, 120)
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 70%;
+}
+
+.footerFila {
+    height: 7.5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerIzq {
+    height: 7.5vh;
+    width: 50%;
+}
+
+.footerImg {
+    height: 7.5vh;
+    width: 7.5vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.footerImg a {
+    height: 100%;
+    width: 100%;
+    
+    /* No creo que esto este bien hecho pero bueno XD */
+    display: flex;
+
+    align-items: center;
+    justify-content: center; 
+}
+
+.footerImg img:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    height: 5.5vh;
+
+    border-radius: 50%;
+}
+
+.footerImg img {
+    transition: 0.5s;
+    height: 5vh;
+
+    border-radius: 50%;
+}
+
+.footerDer {
+    height: 7.5vh;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.footerDer p {
+    margin: 2.5vh;
+}
+
+.footerContenido {
+    height: auto;
+    width: 100%;
+
+    padding-top: 2.5vh;
+
+    display: flex;
+    align-items: top;
+    justify-content: center;
+
+    border-top: 1px rgb(73, 116, 120) solid;
+}
+
+.footerContenido ul {
+    margin: 0 auto 0 0;
+}
+
+.footerContenido ul li {
+    list-style-type: none;
+    padding-bottom: 1.5vh;
+}
+
+.footerContenido p {
+    display: inline;
+    font-weight: bold;
+}
+
+.footerContenido a {
+    display: inline;
+    font-weight: normal;
+}
+
+.footerLocalidad {
+    margin: 2.5vh 0;
+}
+
+#footerFila2 {
+    justify-content: left;
+
+    border-top: 1px rgb(73, 116, 120) solid;
 }
