@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "DM Sans";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+
+header {
+    height: 7.5vh;
+    width: 100%;
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+
+    background-color: lightblue;
+}
+
+.headerIzq {
+    width: 50%;
+}
+
+.headerIzq a {
+    margin: auto 3.25vh;
+}
+
+.headerDer {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.headerImg {
+    height: 7.5vh;
+    width: 7.5vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.headerImg a {
+    height: 100%;
+    width: 100%;
+    
+    /* No creo que esto este bien hecho pero bueno XD */
+    display: flex;
+
+    align-items: center;
+    justify-content: center; 
+}
+
+.headerImg img {
+    transition: 0.5s;
+    height: 5vh;
+
+    border-radius: 50%;
+}
+
+.headerImg img:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    height: 5.5vh;
+
+    border-radius: 50%;
+}
+
+/* espaciador */
+
+.espaciador {
+    height: 7.5vh;
+    background-color: black;
+}
+
+/* integrantes */
+
+.integrantes {
+    height: 100vh;
+    width: 100%;
+}
+
+/* footer */
+
+.footer {
+    height: auto;
+    width: 100%;
+
+    background-color: lightblue;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer p, .footer a {
+    color: rgb(73, 116, 120)
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 70%;
+}
+
+.footerFila {
+    height: 7.5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerIzq {
+    height: 7.5vh;
+    width: 50%;
+}
+
+.footerImg {
+    height: 7.5vh;
+    width: 7.5vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.footerImg a {
+    height: 100%;
+    width: 100%;
+    
+    /* No creo que esto este bien hecho pero bueno XD */
+    display: flex;
+
+    align-items: center;
+    justify-content: center; 
+}
+
+.footerImg img:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    height: 5.5vh;
+
+    border-radius: 50%;
+}
+
+.footerImg img {
+    transition: 0.5s;
+    height: 5vh;
+
+    border-radius: 50%;
+}
+
+.footerDer {
+    height: 7.5vh;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.footerDer p {
+    margin: 2.5vh;
+}
+
+.footerContenido {
+    height: auto;
+    width: 100%;
+
+    padding-top: 2.5vh;
+
+    display: flex;
+    align-items: top;
+    justify-content: center;
+
+    border-top: 1px rgb(73, 116, 120) solid;
+}
+
+.footerContenido ul {
+    margin: 0 auto 0 0;
+}
+
+.footerContenido ul li {
+    list-style-type: none;
+    padding-bottom: 1.5vh;
+}
+
+.footerContenido p {
+    display: inline;
+    font-weight: bold;
+}
+
+.footerContenido a {
+    display: inline;
+    font-weight: normal;
+}
+
+.footerLocalidad {
+    margin: 2.5vh 0;
+}
+
+#footerFila2 {
+    justify-content: left;
+
+    border-top: 1px rgb(73, 116, 120) solid;
+}

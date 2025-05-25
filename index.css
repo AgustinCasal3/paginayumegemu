@@ -16,9 +16,13 @@ a {
     color: black;
 }
 
+/* header */
+
 header {
     height: 7.5vh;
     width: 100%;
+
+    z-index: 999;
 
     position: fixed;
     display: flex;
@@ -79,9 +83,14 @@ header {
     border-radius: 50%;
 }
 
+/* espaciador */
+
 .espaciador {
     height: 7.5vh;
+    background-color: black;
 }
+
+/* inicio */
 
 .inicio {
     height: 92.5vh;
@@ -92,7 +101,7 @@ header {
 
 .inicioIzq {
     height: 100%;
-    width: 50%;
+    width: 60%;
 
     display: flex;
     align-items: center;
@@ -100,22 +109,24 @@ header {
 }
 
 .inicioTexto {
-    width: 80%;
+    width: 90%;
 }
 
-.inicioTexto h1, .inicioTexto p {
+.inicioTexto h1 {
+    font-size: 4em;
     margin: 3vh auto;
     text-align: center;
 }
 
-.inicioTexto h1 {
-    max-width: 100%;
-    font-size: 3em;
+.inicioTexto p {
+    margin: 2.5vh 0;
+    font-size: 1.25em;
+    text-align: center;
 }
 
 .inicioDer {
     height: 100%;
-    width: 50%;
+    width: 40%;
 
     display: flex;
     align-items: center;
@@ -126,11 +137,13 @@ header {
     width: 80%;
 }
 
+/* proyectos */
+
 .proyectos {
-    height: 80vh;
+    height: 90vh;
     width: 100%;
 
-    background-color: pink;
+    background-color: lightslategray;
 }
 
 .proyectosInfo {
@@ -142,14 +155,26 @@ header {
     justify-content: center;
 }
 
-.proyectosTexto h1, .proyectosTexto p {
-    margin: 3vh auto;
+.proyectosTexto h1 {
+    font-size: 3em;
     text-align: center;
+    color: white;
+}
+
+.proyectosTexto p {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
 }
 
 .proyectosListado {
     width: 100%;
     height: 70%;
+}
+
+.proyectosFila {
+    height: 45vh;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -157,24 +182,62 @@ header {
 }
 
 .proyectosItem {
-    width: 30vh;
-    height: 90%;
+    transition: 0.25s;
+    height: 40vh;
+    width: 60vh;
 
-    margin: 0 2.5vh 5vh;
+    margin: 2.5vh;
+
+    border-radius: 1vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
-    background-color: plum;
+.proyectosItem:hover {
+    height: 42.5vh;
+    width: 62.5vh;
+}
+
+.proyectosItem:hover img{
+    transform: scale(1.05);
 }
 
 .pItemContenido {
+    transition: 0.25s;
+
     width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+
+    border-radius: 1vh;
 }
 
-.pItemContenido img {
-    width: 25vh;
+.pItemContenido:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(1px);
+}
+
+.pItemContenidoImg {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pItemContenidoImg a {
+    text-align: center;
+}
+
+.pItemContenidoImg img {
+    transition: 0.25s;
+
+    width: 80%;
 
     margin: 2.5vh;
 }
@@ -186,6 +249,16 @@ header {
 
     margin: 1.5vh auto;
 }
+
+#IWTDTFW {
+    background-image: url("./imgs/proyectos/IWTDTFW/fondoJuego1.png");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 1vh;
+}
+
+/* contactanos */
 
 .contactanos {
     height: 70vh;
@@ -235,6 +308,8 @@ header {
     color: white;
 }
 
+/* integrantes */
+
 .integrantes {
     height: auto;
     width: 100%;
@@ -253,6 +328,10 @@ header {
 
 .integrantesTexto h1 {
     font-size: 3em;
+}
+
+.integrantesTexto p {
+    text-align: right;
 }
 
 .integrantesBox {
@@ -304,16 +383,18 @@ header {
 
 .iItemDer {
     height: 20vh;
-    width: auto;
+    width: calc(100% - 20vh);
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .iItemTexto p {
     margin: 2vh auto 0;
 }
+
+/* footer */
 
 .footer {
     height: auto;
